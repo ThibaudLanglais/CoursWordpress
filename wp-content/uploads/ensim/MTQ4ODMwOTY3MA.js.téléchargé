@@ -1,0 +1,5 @@
+/** File : /plugins/jquery-ui/resources/js/i18n/jquery.ui.datepicker-fr.js */
+document_currentScript = (function() { a = document.createElement('script'); a.src='/plugins/jquery-ui/resources/js/i18n/jquery.ui.datepicker-fr.js'; return a; })(); try {
+throw new Error('Resource not found for URI : \'plugin:jquery-ui:\/\/resources\/js\/i18n\/jquery.ui.datepicker-fr.js\'.\n\tat <map:read type=\"resource\"> - resource:\/\/org\/ametys\/runtime\/kernel\/sitemap.xmap:163:86');} catch (e) { console.error("/plugins/jquery-ui/resources/js/i18n/jquery.ui.datepicker-fr.js\n", e) }
+
+//# sourceMappingURL=MTQ4ODMwOTY3MA.js.map

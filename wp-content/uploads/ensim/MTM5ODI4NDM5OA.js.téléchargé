@@ -1,0 +1,6 @@
+/** File : /plugins/link-directory/resources/js/LinkDirectoryHelper.js */
+document_currentScript = (function() { a = document.createElement('script'); a.src='/plugins/link-directory/resources/js/LinkDirectoryHelper.js'; return a; })(); try {
+var AmetysHelperLinkDirectory={saveUserPrefs:function(orderedLinks,hiddenLinks,siteUriPrefix,lang,savingId,successCB,errorCB){var data={"saving-id":savingId,"language":lang};if(orderedLinks!=null)data["ordered-links"]=orderedLinks.join();if(hiddenLinks!=null)data["hidden-links"]=hiddenLinks.join();$j.ajax({url:siteUriPrefix+"/_plugins/link-directory/set-user-preferences",data:data,method:"POST",success:function(data){if($j.isFunction(successCB))successCB()},error:function(data){if($j.isFunction(errorCB))errorCB()}})},
+removeUserLinks:function(linksToRemove,siteUriPrefix,successCB,errorCB,noLinkToRemoveCB){if(linksToRemove!=null)if(linksToRemove.length>0)$j.ajax({url:siteUriPrefix+"/_plugins/link-directory/remove-user-link",data:{ids:JSON.stringify(linksToRemove)},method:"POST",success:function(data){if($j.isFunction(successCB))successCB()},error:function(data){if($j.isFunction(errorCB))errorCB()}});else if($j.isFunction(noLinkToRemoveCB))noLinkToRemoveCB()}};} catch (e) { console.error("/plugins/link-directory/resources/js/LinkDirectoryHelper.js\n", e) }
+
+//# sourceMappingURL=MTM5ODI4NDM5OA.js.map
